@@ -3,6 +3,8 @@ layout: post
 title: Mockito Capture Verify Arguments passed to a mock
 ---
 
+This post should explain how to use Mockito Capture to verigy arguments passed to a mock.  
+
 # ArgumentCaptor
 
 Use this when you want to verify the values of the arguments passed to a function in your Mocked Service.  Most of time I find myself using this for a function that has a sideeffect like persisting to a dabase or writing out to a file.  Normally I am doing the sideffect through a service.  So if I'm persisting the database I am using a jdbc or JPA service to do that.  The JDBC or JPA service is what I would mock and what I would be intereste in testing. This seperates me from the database but gives me a clear understanding as to what is being sent.
